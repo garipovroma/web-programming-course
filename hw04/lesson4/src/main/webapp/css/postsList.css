@@ -1,0 +1,16 @@
+main ul li {
+    margin: 0 0 3rem 0;
+}
+
+body main main {
+    margin-right: 0;
+}
+
+body main ul {
+    padding: 0;
+    list-style: none;
+}
+
+body div main ul {
+    margin: 0;
+}

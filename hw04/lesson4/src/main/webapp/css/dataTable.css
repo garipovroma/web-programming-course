@@ -1,0 +1,41 @@
+:root {
+    --border-color: rgb(185, 185, 185);
+    --table-border-color: #E1E1E1;
+    --border-radius: 6px;
+    --black-color: #333;
+    --caption-color: #3B5998;
+    --table-odd-row-color: #f8f8f8;
+    color: var(--black-color);
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+}
+
+main table {
+    width: 100%;
+    border-left: 1px solid var(--table-border-color);
+    border-right: 1px solid var(--table-border-color);
+    border-collapse: collapse;
+    font-size: 0.8rem;
+    font-family: verdana,arial,sans-serif;
+}
+
+main .datatable table thead th, main .datatable table tbody td {
+    flex-direction: row;
+    padding: 0.3em;
+    text-align: center;
+    border: 1px solid var(--table-border-color);
+    line-height: 1rem;
+}
+
+main .datatable table tbody tr:nth-child(odd) {
+    background-color: var(--table-odd-row-color) !important;
+}
+
+main .datatable .caption {
+    background : var(--table-border-color);
+    border-top: 1px solid var(--table-border-color);
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    padding: 0.15rem 0 0.15rem 0.5rem;
+    font-size: 0.9rem;
+}
