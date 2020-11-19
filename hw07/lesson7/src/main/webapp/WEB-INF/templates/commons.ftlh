@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/form.css">
     <link rel="stylesheet" type="text/css" href="css/datatable.css">
+    <link rel="stylesheet" type="text/css" href="css/article.css">
     <script src="/js/jquery-3.4.1.min.js"></script>
     <script src="/js/notify.min.js"></script>
     <script src="/js/app.js"></script>
@@ -38,7 +39,8 @@
             <li><a href="/index">Home</a></li>
             <li><a href="/users">Users</a></li>
             <#if user??>
-                <li><a href="/article">Article</a><li>
+                <li><a href="/article">New Article</a></li>
+                <li><a href="/myArticles">My Articles</a></li>
             </#if>
         </ul>
     </nav>
@@ -68,7 +70,11 @@
 <script>
     $(function () {
         <#if message??>
-            notify("${message?js_string}");
+            <#if messageType??>
+                    notify("${message?js_string}", "${messageType?js_string}");
+                <#else>
+                    notify("${message?js_string}");
+            </#if>
         </#if>
     })
 </script>

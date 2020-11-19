@@ -1,10 +1,11 @@
+<#-- @ftlvariable name="text" type="java.lang.String" -->
 <#-- @ftlvariable name="title" type="java.lang.String" -->
 <#-- @ftlvariable name="users" type="ru.itmo.wp.model.domain.User[]" -->
 <#import "commons.ftlh" as c>
 
 <@c.page>
     <p>
-    <div class="form-box">
+    <div class="input form-box">
         <div class="header">Article</div>
         <div class="body">
             <form method="post" action="" id="articleText">
@@ -18,7 +19,10 @@
                     </div>
                 </div>
                 <div class="field">
-                    <textarea rows="10" cols="51" id="articleText" name="articleText"></textarea>
+                    <textarea rows="10" cols="51" id="articleText" style="width: 98.5%" name="articleText"></textarea>
+                </div>
+                <div class="error">
+                    ${error!}
                 </div>
                 <form class="button-field">
                     <input type="submit" value="Create">
@@ -29,9 +33,9 @@
     </p>
     <script>
         $(function() {
-            $(".enter form").submit(function() {
+            $(".input form").submit(function() {
                 const title = $(this).find("input[name='title']").val();
-                const articleText = $(this).find("input[name='articleText']").val();
+                const articleText = $(this).find("textarea[id='articleText']").val();
                 return ajax({
                     action: "createArticle",
                     title: title,

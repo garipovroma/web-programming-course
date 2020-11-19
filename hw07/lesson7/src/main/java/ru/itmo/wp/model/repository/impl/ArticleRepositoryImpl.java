@@ -56,6 +56,9 @@ public class ArticleRepositoryImpl implements ArticleRepository {
                 case "creationTime":
                     article.setCreationTime(resultSet.getTimestamp(i));
                     break;
+                case "hidden":
+                    article.setHidden(resultSet.getBoolean(i));
+                    break;
                 default:
                     // No operations.
             }
@@ -93,6 +96,20 @@ public class ArticleRepositoryImpl implements ArticleRepository {
         try (Connection connection = DATA_SOURCE.getConnection()) {
             try (PreparedStatement statement = connection.prepareStatement("SELECT * FROM Article WHERE id=?")) {
                 statement.setLong(1, id);
+                try (ResultSet resultSet = statement.executeQuery()) {
+                    return toArticle(statement.getMetaData(), resultSet);
+                }
+            }
+        } catch (SQLException e) {
+            throw new RepositoryException("Can't find Article.", e);
+        }
+    }
+
+    public Article setHiddenField(long articleId, boolean hiddenValue) {
+        try (Connection connection = DATA_SOURCE.getConnection()) {
+            try (PreparedStatement statement = connection.prepareStatement("UPDATE Article SET hidden=? WHERE id=?")) {
+                statement.setBoolean(1, hiddenValue);
+                statement.setLong(2, articleId);
                 try (ResultSet resultSet = statement.executeQuery()) {
                     return toArticle(statement.getMetaData(), resultSet);
                 }

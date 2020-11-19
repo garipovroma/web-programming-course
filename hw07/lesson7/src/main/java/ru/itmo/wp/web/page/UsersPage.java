@@ -18,7 +18,6 @@ public class UsersPage {
     }
 
     private void findUser(HttpServletRequest request, Map<String, Object> view) {
-        view.put("user",
-                userService.find(Long.parseLong(request.getParameter("userId"))));
+        view.put("user", userService.find(Long.parseLong(request.getParameter("userId"))));
     }
 }
