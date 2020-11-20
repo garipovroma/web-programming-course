@@ -63,4 +63,19 @@ public class UserService {
         }
         return user;
     }
+
+    public void validateAdmin(User user) throws ValidationException {
+        if (!user.isAdmin()) {
+            throw new ValidationException("Current user isn't admin!");
+        }
+    }
+
+    public void setAdminField(long userId, boolean valueToSet) {
+        User result = userRepository.setAdminField(userId, valueToSet);
+    }
+
+    public boolean getAdminValue(long userId) {
+        User result = userRepository.find(userId);
+        return result.isAdmin();
+    }
 }

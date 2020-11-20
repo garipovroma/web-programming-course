@@ -19,7 +19,7 @@
                     </div>
                 </div>
                 <div class="field">
-                    <textarea rows="10" cols="51" id="articleText" style="width: 98.5%" name="articleText"></textarea>
+                    <textarea rows="10" cols="51" id="articleText" style="width: 98.5%; resize: none" name="articleText"></textarea>
                 </div>
                 <div class="error">
                     ${error!}

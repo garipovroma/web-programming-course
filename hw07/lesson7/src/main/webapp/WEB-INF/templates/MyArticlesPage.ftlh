@@ -40,8 +40,9 @@
                 const articleId = hideOrShowValue.substring(ind + 1, hideOrShowValue.length);
                 const context = $(this);
                 return ajax({
-                    action: "changeArticleHiddenField",
+                    action: "setArticleHiddenField",
                     articleId: articleId,
+                    value: newText
                 }, this, function (response) {
                     if (response["error"]) {
                         context.find(".error").text(response["error"]);
@@ -52,19 +53,6 @@
                         }
                     }
                 });
-                /*
-
-                $.ajax({
-                    dataType: "json",
-                    data: {
-                        action: "findUser",
-                        userId: $(this).attr("data-userId")
-                    },
-                    success: function (response) {
-                        notify(response["user"].creationTime);
-                    },
-                    type: "POST"
-                })*/
             });
         });
     </script>

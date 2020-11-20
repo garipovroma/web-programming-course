@@ -91,6 +91,9 @@ public class UserRepositoryImpl implements UserRepository {
                 case "creationTime":
                     user.setCreationTime(resultSet.getTimestamp(i));
                     break;
+                case "admin":
+                    user.setAdmin(resultSet.getBoolean(i));
+                    break;
                 default:
                     // No operations.
             }
@@ -119,6 +122,39 @@ public class UserRepositoryImpl implements UserRepository {
             }
         } catch (SQLException e) {
             throw new RepositoryException("Can't save User.", e);
+        }
+    }
+
+    /*
+
+    public Article setHiddenField(long articleId, boolean hiddenValue) {
+        try (Connection connection = DATA_SOURCE.getConnection()) {
+            try (PreparedStatement statement = connection.prepareStatement("UPDATE Article SET hidden=? WHERE id=?")) {
+                statement.setBoolean(1, hiddenValue);
+                statement.setLong(2, articleId);
+                try (ResultSet resultSet = statement.executeQuery()) {
+                    return toArticle(statement.getMetaData(), resultSet);
+                }
+            }
+        } catch (SQLException e) {
+            throw new RepositoryException("Can't find Article.", e);
+        }
+    }
+     */
+
+
+    @Override
+    public User setAdminField(long userId, boolean valueToSet) {
+        try (Connection connection = DATA_SOURCE.getConnection()) {
+            try (PreparedStatement statement = connection.prepareStatement("UPDATE User SET admin=? WHERE id=?")) {
+                statement.setBoolean(1, valueToSet);
+                statement.setLong(2, userId);
+                try (ResultSet resultSet = statement.executeQuery()) {
+                    return toUser(statement.getMetaData(), resultSet);
+                }
+            }
+        } catch (SQLException e) {
+            throw new RepositoryException("Can't set User admin field.", e);
         }
     }
 }

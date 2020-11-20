@@ -39,9 +39,8 @@ public class ArticleService {
         return articleRepository.findAll();
     }
 
-    public void changeHiddenField(long articleId) {
-        Article article = articleRepository.find(articleId);
-        Article result = articleRepository.setHiddenField(articleId, (!article.isHidden()));
+    public void setHiddenField(long articleId, boolean hidden) {
+        Article result = articleRepository.setHiddenField(articleId, hidden);
     }
 
     public void validateArticleCreator(long userId, long articleId) throws ValidationException {

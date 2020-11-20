@@ -115,7 +115,7 @@ public class ArticleRepositoryImpl implements ArticleRepository {
                 }
             }
         } catch (SQLException e) {
-            throw new RepositoryException("Can't find Article.", e);
+            throw new RepositoryException("Can't set Article hidden field.", e);
         }
     }
 }

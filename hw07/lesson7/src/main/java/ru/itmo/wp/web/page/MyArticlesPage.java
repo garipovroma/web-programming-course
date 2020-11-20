@@ -18,12 +18,14 @@ public class MyArticlesPage {
         checkLoggedInUser(request);
         putArticles(request, view);
     }
-    private void changeArticleHiddenField(HttpServletRequest request, Map<String, Object> view) throws ValidationException {
+    private void setArticleHiddenField(HttpServletRequest request, Map<String, Object> view) throws ValidationException {
         checkLoggedInUser(request);
         long userId = ((User) request.getSession().getAttribute("user")).getId();
         long articleId = (Long.parseLong(request.getParameter("articleId")));
+        String value = (request.getParameter("value"));
+        boolean newValue = value.equals("Show");
         articleService.validateArticleCreator(userId, articleId);
-        articleService.changeHiddenField(articleId);
+        articleService.setHiddenField(articleId, newValue);
     }
     private void checkLoggedInUser(HttpServletRequest request) {
         if (request.getSession().getAttribute("user") == null) {
