@@ -25,16 +25,11 @@ public class UsersPage {
 
     private void setAdminField(HttpServletRequest request, Map<String, Object> view) throws ValidationException {
         checkLoggedInUser(request);
-        userService.validateAdmin((User) request.getSession().getAttribute("user"));
+        User user = (User) request.getSession().getAttribute("user");
+        userService.validateAdmin(user);
         long userId = Long.parseLong(request.getParameter("userId"));
         boolean valueToSet = !((String) request.getParameter("userAdminValue")).equals("true");
         userService.setAdminField(userId, valueToSet);
-    }
-
-    private void getAdminValue(HttpServletRequest request, Map<String, Object> view) throws ValidationException {
-        long userId = Long.parseLong((request.getParameter("userId")));
-        boolean adminValue = userService.getAdminValue(userId);
-
     }
 
     private void findAll(HttpServletRequest request, Map<String, Object> view) {

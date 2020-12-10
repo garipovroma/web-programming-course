@@ -39,28 +39,26 @@
     $(function () {
         const $noData = $(".articles .noData");
         $noData.text("Loading...");
-
-        $.ajax({
-            dataType: "json",
-            data: {
-                action: "action"
-            },
-            success: function(response) {
-                response["articles"].forEach(function(article) {
-                    $noData.hide();
-                    const $article = $($(".articles template").prop("content")).clone();
-                    $article.find(".title").text(article["title"]);
-                    $article.find(".information")
-                        .text("By " + article["userId"] + ", " + article["creationTime"] + ", translation");
-                    $article.find(".body").text(article["text"]);
-                    if (!article["hidden"]) {
-                        $(".articles").append($article);
-                    }
-                });
-            },
-            type: "POST"
+        let counter = 0;
+        ajax({
+            action: "action"}, this,function(response) {
+            response["articles"].forEach(function(article) {
+                $noData.hide();
+                const $article = $($(".articles template").prop("content")).clone();
+                $article.find(".title").text(article["title"]);
+                $article.find(".information")
+                    .text("By " + article["userId"] + ", " + article["creationTime"] + ", translation");
+                $article.find(".body").text(article["text"]);
+                if (!article["hidden"]) {
+                    $(".articles").append($article);
+                    counter++;
+                }
+            });
         });
-
+        if (counter !== 0) {
+            $noData.text("No data...");
+        }
+        return false;
     })
 </script>
 </@c.page>

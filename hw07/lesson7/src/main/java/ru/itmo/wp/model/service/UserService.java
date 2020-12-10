@@ -73,9 +73,4 @@ public class UserService {
     public void setAdminField(long userId, boolean valueToSet) {
         User result = userRepository.setAdminField(userId, valueToSet);
     }
-
-    public boolean getAdminValue(long userId) {
-        User result = userRepository.find(userId);
-        return result.isAdmin();
-    }
 }
