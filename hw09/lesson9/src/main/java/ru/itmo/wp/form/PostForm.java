@@ -1,9 +1,6 @@
 package ru.itmo.wp.form;
 
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Pattern;
-import javax.validation.constraints.Size;
+import javax.validation.constraints.*;
 
 public class PostForm {
     @NotNull
@@ -11,9 +8,7 @@ public class PostForm {
     @Size(min = 2, max = 150)
     private String title;
 
-    @NotNull
-    @NotEmpty
-    @Size(min = 2, max = 500)
+    @Size(max = 100)
     private String tags;
 
     @NotNull

@@ -66,7 +66,7 @@ public class UserService {
         post.setTitle(postForm.getTitle());
         post.setText(postForm.getText());
 
-        List <String> stringList = Arrays.asList(postForm.getTags().split("\\s+"));
+        List <String> stringList = Arrays.asList(postForm.getTags().trim().split("\\s+"));
         Function<String, Tag> stringToTag = new Function<String, Tag>() {
             @Override
             public Tag apply(String s) {
@@ -79,10 +79,11 @@ public class UserService {
             }
         };
 
-
-        Stream<Tag> tagStream = stringList.stream().map(stringToTag);
-        List<Tag> tagList = tagStream.collect(Collectors.toList());
-        post.setTags(tagList);
+        Stream<Tag> tagStream = stringList.stream().distinct().map(stringToTag);
+        if (!(stringList.size() == 1 && stringList.contains(""))) {
+            List<Tag> tagList = tagStream.collect(Collectors.toList());
+            post.setTags(tagList);
+        }
         user.addPost(post);
         userRepository.save(user);
     }

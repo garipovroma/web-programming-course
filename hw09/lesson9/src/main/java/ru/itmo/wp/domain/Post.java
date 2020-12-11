@@ -36,12 +36,14 @@ public class Post {
     private Date creationTime;
 
     @OneToMany(mappedBy = "post", cascade = CascadeType.ALL)
+    @OrderBy("id ASC")
     private List<Comment> comments;
 
     @ManyToMany
     @JoinTable(name = "post_tag",
             joinColumns = @JoinColumn(name = "post_id")
     )
+    @OrderBy("name ASC")
     private List<Tag> tags;
 
     public List<Tag> getTags() {

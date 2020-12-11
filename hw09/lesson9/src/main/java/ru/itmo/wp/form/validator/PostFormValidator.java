@@ -21,12 +21,12 @@ public class PostFormValidator implements Validator {
     public void validate(Object target, Errors errors) {
         if (!errors.hasErrors()) {
             PostForm postForm = (PostForm) target;
-            if (!Arrays.stream(postForm.getTags().split("\\s+")).allMatch(new Predicate<String>() {
+            if (!Arrays.stream(postForm.getTags().trim().split("\\s+")).allMatch(new Predicate<String>() {
                 @Override
                 public boolean test(String s) {
                     return s.matches("[a-z]+");
                 }
-            })){
+            }) && !postForm.getTags().isEmpty()){
                 errors.rejectValue("tags", "tags.pattern-mismatch", "Tags can contain only latin characters");
             }
         }
