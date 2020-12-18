@@ -50,10 +50,10 @@ export default {
         },
         getUserNamesByUserId: function () {
             let result = {};
-            function onlyUnique(value, index, self) {
+            /*function onlyUnique(value, index, self) {
                 return self.indexOf(value) === index;
-            }
-            Object.values(this.posts).filter(onlyUnique).forEach(currentPost => {
+            }*/
+            Object.values(this.posts).forEach(currentPost => {
                 const value = Object.values(this.users).filter((x) => x.id === currentPost.userId)[0].name;
                 result[currentPost.userId] = value;
             });

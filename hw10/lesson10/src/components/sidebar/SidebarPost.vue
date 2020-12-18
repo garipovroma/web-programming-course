@@ -7,15 +7,20 @@
       {{ post.text }}
     </div>
     <div class="footer">
-      <a href="#">View all</a>
+      <a href="#" @click.prevent="showPost()">View all</a>
     </div>
   </section>
 </template>
 
 <script>
 export default {
-  name: "SidebarPost",
-  props: ["post"]
+    name: "SidebarPost",
+    props: ["post"],
+    methods: {
+        showPost: function() {
+            this.$root.$emit("onShowPost", "Index", this.post);
+        }
+    }
 }
 </script>
 
