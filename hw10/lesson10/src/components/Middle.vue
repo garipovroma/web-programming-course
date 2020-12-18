@@ -2,9 +2,9 @@
     <div class="middle">
         <Sidebar :posts="viewPosts"/>
         <main>
-            <Index v-if="page === 'Index'" :posts="posts"
+            <Index v-if="page === 'Index'" :posts="post === undefined ? posts : [post]"
                    :postsCommentsCount="getPostCommentsCount()" :userNameByUserId="getUserNamesByUserId()"
-                   :commentsBool="false"/>
+                   :commentsBool="post!==undefined"/>
             <Enter v-if="page === 'Enter'"/>
             <WritePost v-if="page === 'WritePost'"/>
             <EditPost v-if="page === 'EditPost'"/>
@@ -27,7 +27,8 @@ export default {
     name: "Middle",
     data: function () {
         return {
-            page: "Index"
+            page: "Index",
+            post: undefined
         }
     },
     components: {
@@ -65,7 +66,8 @@ export default {
             return Object.values(this.posts).sort((a, b) => b.id - a.id).slice(0, 2);
         }
     }, beforeCreate() {
-        this.$root.$on("onChangePage", (page) => this.page = page)
+        this.$root.$on("onChangePage", (page) => {this.page = page; this.post = undefined;});
+        this.$root.$on("onShowPost", (page, post) => {this.page = page; this.post = post;});
     }
 }
 </script>

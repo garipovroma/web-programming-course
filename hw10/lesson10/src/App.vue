@@ -85,7 +85,6 @@ export default {
         });
 
         this.$root.$on("onRegister", (login, name) => {
-            alert(Object.values(this.users).filter((x) => x.login === login));
             if (!login || login.length < 3 || login.length > 16) {
                 this.$root.$emit("onRegisterValidationError", "Login can contains from 3 to 16 characters");
             } else if (!login.match('[a-z]+')) {
@@ -100,8 +99,6 @@ export default {
                 this.$root.$set(this.users, id, {
                     id, login, name, admin
                 });
-                alert(login);
-                alert(this.users.map((a, b) => a + b.toString(), this.users))
                 this.userId = id;
                 this.$root.$emit("onChangePage", "Index");
             }

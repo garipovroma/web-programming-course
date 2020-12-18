@@ -2,8 +2,7 @@
     <div class="post">
         <article>
             <div class="title">
-                <a style="text-decoration: none; color:var(--caption-color)" href="#"
-                   @click.prevent="this.$root.$emit('onChangePage', 'Post');">
+                <a style="text-decoration: none; color:var(--caption-color)" @click.prevent="showPost()" href="#">
                     {{ post.title }}
                 </a>
             </div>
@@ -26,7 +25,7 @@
                 </div>
             </div>
         </article>
-        <Comments v-if="commentsBool" :comments="getComments()"/>
+        <Comments v-if="commentsBool" :comments="getComments()" :userLoginById="getUsersForComments()"/>
     </div>
 </template>
 
@@ -44,10 +43,18 @@ export default {
         getComments: function() {
             const result = Object.values(this.$root.$data.comments).filter((x) => x.postId === this.post.id);
             return result;
-        }
-    }, beforeCreate() {
-        if (this.commentsBool === undefined) {
-            this.commentsBool = true;
+        },
+        getUsersForComments: function() {
+            let result = {};
+            let comments = Object.values(this.$root.$data.comments).filter((x) => x.postId === this.post.id);
+            Object.values(this.$root.$data.users).forEach((user) => {
+                let filtred = comments.filter((comment) => comment.userId === user.id)[0];
+                if (filtred !== undefined)
+                    result[filtred.userId] = user.login;
+            });
+            return result;
+        }, showPost: function() {
+            this.$root.$emit("onShowPost", "Index", this.post);
         }
     }
 }

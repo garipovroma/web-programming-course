@@ -3,7 +3,7 @@
         <div v-for="comment in comments" :key="comment.id">
             <article>
                 <div class="footer">
-                    [{{ comment.userId }}]: {{ comment.text }}
+                    [{{ userLoginById[comment.userId] }}]: {{ comment.text }}
                 </div>
             </article>
         </div>
@@ -13,7 +13,7 @@
 <script>
 export default {
     name: "Comments",
-    props: ["comments"]
+    props: ["comments", "userLoginById"]
 }
 </script>
 

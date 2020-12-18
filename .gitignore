@@ -11,12 +11,10 @@ hw08/lesson8/target/
 
 hw08/lesson8/.idea/
 
-hw07/lesson7/.idea/
-
-hw07/tmp.txt
-
 hw09/lesson9/.idea/
 
-hw09/lesson9/target/
+hw09/lesson9/src/main/resources/application.properties
 
-hw09/lesson9/HELP.md
+hw10/lesson10/node_modules/
+
+hw10/lesson10/.idea/
