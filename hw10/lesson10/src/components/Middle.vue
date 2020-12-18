@@ -42,9 +42,17 @@ export default {
     }, methods: {
         getPostCommentsCount : function() {
             let result = {};
-            Object.values(this.posts).forEach(currentPost => {
-                const value = Object.values(this.$root.$data.comments).filter((x) => x.postId === currentPost.id).length;
-                result[currentPost.id] = (value === undefined ? 0 : value);
+            Object.values(this.$root.$data.comments).forEach((comment) => {
+                if (result[comment.postId] === undefined) {
+                    result[comment.postId] = 1;
+                }  else {
+                    result[comment.postId]++;
+                }
+            });
+            Object.values(this.posts).forEach((post) => {
+                if (result[post.id] === undefined) {
+                    result[post.id] = 0;
+                }
             });
             return result;
         },
@@ -54,8 +62,7 @@ export default {
                 return self.indexOf(value) === index;
             }*/
             Object.values(this.posts).forEach(currentPost => {
-                const value = Object.values(this.users).filter((x) => x.id === currentPost.userId)[0].name;
-                result[currentPost.userId] = value;
+                result[currentPost.userId] = Object.values(this.users).filter((x) => x.id === currentPost.userId)[0].name;
             });
             return result;
         }

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="25ead0a1-4e1f-49a4-97b4-f16768bda739" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1hSJHb8GbpzvIg6wNrFWK3OR50h" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../hw02/A/2-1-codeforces-layout-search" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
+      <setting name="replType" value="NREPL" />
+      <setting name="execution" value="LEININGEN" />
+      <setting name="jvmArgs" value="" />
+      <setting name="parameters" value="" />
+      <setting name="workingDir" value="" />
+      <setting name="profiles" value="" />
+      <setting name="aliases" value="" />
+      <setting name="fixLineNumbers" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="ClojureREPL" factoryName="Remote" activateToolWindowBeforeRun="false">
+      <setting name="host" value="" />
+      <setting name="port" value="0" />
+      <setting name="replType" value="SOCKET" />
+      <setting name="configType" value="SPECIFY" />
+      <setting name="replPortFileType" value="STANDARD" />
+      <setting name="customPortFile" value="" />
+      <setting name="fixLineNumbers" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="server14" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Tests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.Tests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="25ead0a1-4e1f-49a4-97b4-f16768bda739" name="Default Changelist" comment="" />
+      <created>1599998473209</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599998473209</updated>
+      <workItem from="1599998474310" duration="45000" />
+      <workItem from="1599998559808" duration="126000" />
+      <workItem from="1599998696181" duration="13024000" />
+      <workItem from="1600284103697" duration="24445000" />
+      <workItem from="1600432859059" duration="3972000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="142" y="28" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600361251607">
+      <screen x="0" y="0" width="1366" height="744" />
+    </state>
+    <state x="142" y="28" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.744@0.0.1366.744" timestamp="1600361251607" />
+    <state x="100" y="100" width="1166" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1600344361850">
+      <screen x="0" y="0" width="1366" height="744" />
+    </state>
+    <state x="100" y="100" width="1166" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1366.744@0.0.1366.744" timestamp="1600344361850" />
+    <state x="467" y="128" key="FileChooserDialogImpl" timestamp="1600433926823">
+      <screen x="0" y="0" width="1366" height="744" />
+    </state>
+    <state x="467" y="128" key="FileChooserDialogImpl/0.0.1366.744@0.0.1366.744" timestamp="1600433926823" />
+    <state width="1320" height="154" key="GridCell.Tab.0.bottom" timestamp="1600436832581">
+      <screen x="0" y="0" width="1366" height="744" />
+    </state>
+    <state width="1320" height="154" key="GridCell.Tab.0.bottom/0.0.1366.744@0.0.1366.744" timestamp="1600436832581" />
+    <state width="1320" height="154" key="GridCell.Tab.0.center" timestamp="1600436832580">
+      <screen x="0" y="0" width="1366" height="744" />
+    </state>
+    <state width="1320" height="154" key="GridCell.Tab.0.center/0.0.1366.744@0.0.1366.744" timestamp="1600436832580" />
+    <state width="1320" height="154" key="GridCell.Tab.0.left" timestamp="1600436832579">
+      <screen x="0" y="0" width="1366" height="744" />
+    </state>
+    <state width="1320" height="154" key="GridCell.Tab.0.left/0.0.1366.744@0.0.1366.744" timestamp="1600436832579" />
+    <state width="1320" height="154" key="GridCell.Tab.0.right" timestamp="1600436832580">
+      <screen x="0" y="0" width="1366" height="744" />
+    </state>
+    <state width="1320" height="154" key="GridCell.Tab.0.right/0.0.1366.744@0.0.1366.744" timestamp="1600436832580" />
+    <state width="1320" height="154" key="GridCell.Tab.1.bottom" timestamp="1600436832582">
+      <screen x="0" y="0" width="1366" height="744" />
+    </state>
+    <state width="1320" height="154" key="GridCell.Tab.1.bottom/0.0.1366.744@0.0.1366.744" timestamp="1600436832582" />
+    <state width="1320" height="154" key="GridCell.Tab.1.center" timestamp="1600436832582">
+      <screen x="0" y="0" width="1366" height="744" />
+    </state>
+    <state width="1320" height="154" key="GridCell.Tab.1.center/0.0.1366.744@0.0.1366.744" timestamp="1600436832582" />
+    <state width="1320" height="154" key="GridCell.Tab.1.left" timestamp="1600436832581">
+      <screen x="0" y="0" width="1366" height="744" />
+    </state>
+    <state width="1320" height="154" key="GridCell.Tab.1.left/0.0.1366.744@0.0.1366.744" timestamp="1600436832581" />
+    <state width="1320" height="154" key="GridCell.Tab.1.right" timestamp="1600436832582">
+      <screen x="0" y="0" width="1366" height="744" />
+    </state>
+    <state width="1320" height="154" key="GridCell.Tab.1.right/0.0.1366.744@0.0.1366.744" timestamp="1600436832582" />
+    <state x="180" y="5" width="1007" height="733" key="SettingsEditor" timestamp="1599998596070">
+      <screen x="0" y="0" width="1366" height="744" />
+    </state>
+    <state x="180" y="5" width="1007" height="733" key="SettingsEditor/0.0.1366.744@0.0.1366.744" timestamp="1599998596070" />
+    <state x="347" y="163" key="run.anything.popup" timestamp="1600360295282">
+      <screen x="0" y="0" width="1366" height="744" />
+    </state>
+    <state x="347" y="163" key="run.anything.popup/0.0.1366.744@0.0.1366.744" timestamp="1600360295282" />
+    <state x="326" y="64" width="711" height="678" key="search.everywhere.popup" timestamp="1600383097072">
+      <screen x="0" y="0" width="1366" height="744" />
+    </state>
+    <state x="326" y="64" width="711" height="678" key="search.everywhere.popup/0.0.1366.744@0.0.1366.744" timestamp="1600383097072" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="response.getHeaders()" language="JAVA" />
+        <watch expression="line" language="JAVA" />
+        <watch expression="headers" language="JAVA" />
+        <watch expression="request.getHeader(&quot;If-None-Match&quot;)" language="JAVA" />
+        <watch expression="request.getHeader(&quot;ETag&quot;)" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>

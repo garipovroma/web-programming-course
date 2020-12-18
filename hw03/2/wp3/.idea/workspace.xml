@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="wp31:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c3bed558-bc49-4180-93d3-be1bf5c71ecd" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1iHfzKzIB7rr0biciQVxc5EFRlF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../3" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RunManager" selected="JUnit.TestsB">
+    <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
+      <setting name="replType" value="NREPL" />
+      <setting name="execution" value="LEININGEN" />
+      <setting name="jvmArgs" value="" />
+      <setting name="parameters" value="" />
+      <setting name="workingDir" value="" />
+      <setting name="profiles" value="" />
+      <setting name="aliases" value="" />
+      <setting name="fixLineNumbers" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="ClojureREPL" factoryName="Remote" activateToolWindowBeforeRun="false">
+      <setting name="host" value="" />
+      <setting name="port" value="0" />
+      <setting name="replType" value="SOCKET" />
+      <setting name="configType" value="SPECIFY" />
+      <setting name="replPortFileType" value="STANDARD" />
+      <setting name="customPortFile" value="" />
+      <setting name="fixLineNumbers" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestsA" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wp31" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestsA" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestsB" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wp31" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestsB" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 9.0.38" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.38" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="11" nameIsGenerated="true">
+      <deployment>
+        <artifact name="wp31:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_wp31_2" />
+        <option name="PRESERVE_SESSIONS" value="true" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="46457" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="wp31:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings />
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.TestsB" />
+      <item itemvalue="JUnit.TestsA" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.38" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestsB" />
+        <item itemvalue="JUnit.TestsA" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c3bed558-bc49-4180-93d3-be1bf5c71ecd" name="Default Changelist" comment="" />
+      <created>1601569700494</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601569700494</updated>
+      <workItem from="1601569701615" duration="6648000" />
+      <workItem from="1601587794177" duration="1061000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="279" y="13" width="808" height="731" key="#Intentions" timestamp="1601588535021">
+      <screen x="0" y="0" width="1366" height="744" />
+    </state>
+    <state x="279" y="13" width="808" height="731" key="#Intentions/0.0.1366.744@0.0.1366.744" timestamp="1601588535021" />
+    <state x="142" y="0" width="1081" height="748" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601588593248">
+      <screen x="0" y="0" width="1366" height="744" />
+    </state>
+    <state x="142" y="0" width="1081" height="748" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.744@0.0.1366.744" timestamp="1601588593248" />
+    <state x="100" y="100" width="1166" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1601588641402">
+      <screen x="0" y="0" width="1366" height="744" />
+    </state>
+    <state x="100" y="100" width="1166" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1366.744@0.0.1366.744" timestamp="1601588641402" />
+    <state x="492" y="78" key="#com.intellij.ide.util.MemberChooser" timestamp="1601582591216">
+      <screen x="0" y="0" width="1366" height="744" />
+    </state>
+    <state x="492" y="78" key="#com.intellij.ide.util.MemberChooser/0.0.1366.744@0.0.1366.744" timestamp="1601582591216" />
+    <state x="780" y="221" key="#xdebugger.evaluate" timestamp="1601574068858">
+      <screen x="0" y="0" width="1366" height="744" />
+    </state>
+    <state x="780" y="221" key="#xdebugger.evaluate/0.0.1366.744@0.0.1366.744" timestamp="1601574068858" />
+    <state x="467" y="128" key="FileChooserDialogImpl" timestamp="1601582597722">
+      <screen x="0" y="0" width="1366" height="744" />
+    </state>
+    <state x="467" y="128" key="FileChooserDialogImpl/0.0.1366.744@0.0.1366.744" timestamp="1601582597722" />
+    <state width="1320" height="225" key="GridCell.Tab.0.bottom" timestamp="1601588854779">
+      <screen x="0" y="0" width="1366" height="744" />
+    </state>
+    <state width="1320" height="225" key="GridCell.Tab.0.bottom/0.0.1366.744@0.0.1366.744" timestamp="1601588854779" />
+    <state width="1320" height="225" key="GridCell.Tab.0.center" timestamp="1601588854778">
+      <screen x="0" y="0" width="1366" height="744" />
+    </state>
+    <state width="1320" height="225" key="GridCell.Tab.0.center/0.0.1366.744@0.0.1366.744" timestamp="1601588854778" />
+    <state width="1320" height="225" key="GridCell.Tab.0.left" timestamp="1601588854778">
+      <screen x="0" y="0" width="1366" height="744" />
+    </state>
+    <state width="1320" height="225" key="GridCell.Tab.0.left/0.0.1366.744@0.0.1366.744" timestamp="1601588854778" />
+    <state width="1320" height="225" key="GridCell.Tab.0.right" timestamp="1601588854779">
+      <screen x="0" y="0" width="1366" height="744" />
+    </state>
+    <state width="1320" height="225" key="GridCell.Tab.0.right/0.0.1366.744@0.0.1366.744" timestamp="1601588854779" />
+    <state width="903" height="246" key="GridCell.Tab.1.bottom" timestamp="1601582599385">
+      <screen x="0" y="0" width="1366" height="744" />
+    </state>
+    <state width="903" height="246" key="GridCell.Tab.1.bottom/0.0.1366.744@0.0.1366.744" timestamp="1601582599385" />
+    <state width="903" height="246" key="GridCell.Tab.1.center" timestamp="1601582599384">
+      <screen x="0" y="0" width="1366" height="744" />
+    </state>
+    <state width="903" height="246" key="GridCell.Tab.1.center/0.0.1366.744@0.0.1366.744" timestamp="1601582599384" />
+    <state width="903" height="246" key="GridCell.Tab.1.left" timestamp="1601582599384">
+      <screen x="0" y="0" width="1366" height="744" />
+    </state>
+    <state width="903" height="246" key="GridCell.Tab.1.left/0.0.1366.744@0.0.1366.744" timestamp="1601582599384" />
+    <state width="903" height="246" key="GridCell.Tab.1.right" timestamp="1601582599384">
+      <screen x="0" y="0" width="1366" height="744" />
+    </state>
+    <state width="903" height="246" key="GridCell.Tab.1.right/0.0.1366.744@0.0.1366.744" timestamp="1601582599384" />
+    <state width="903" height="246" key="GridCell.Tab.2.bottom" timestamp="1601582599386">
+      <screen x="0" y="0" width="1366" height="744" />
+    </state>
+    <state width="903" height="246" key="GridCell.Tab.2.bottom/0.0.1366.744@0.0.1366.744" timestamp="1601582599386" />
+    <state width="903" height="246" key="GridCell.Tab.2.center" timestamp="1601582599385">
+      <screen x="0" y="0" width="1366" height="744" />
+    </state>
+    <state width="903" height="246" key="GridCell.Tab.2.center/0.0.1366.744@0.0.1366.744" timestamp="1601582599385" />
+    <state width="903" height="246" key="GridCell.Tab.2.left" timestamp="1601582599385">
+      <screen x="0" y="0" width="1366" height="744" />
+    </state>
+    <state width="903" height="246" key="GridCell.Tab.2.left/0.0.1366.744@0.0.1366.744" timestamp="1601582599385" />
+    <state width="903" height="246" key="GridCell.Tab.2.right" timestamp="1601582599385">
+      <screen x="0" y="0" width="1366" height="744" />
+    </state>
+    <state width="903" height="246" key="GridCell.Tab.2.right/0.0.1366.744@0.0.1366.744" timestamp="1601582599385" />
+    <state width="903" height="246" key="GridCell.Tab.3.bottom" timestamp="1601574692263">
+      <screen x="0" y="0" width="1366" height="744" />
+    </state>
+    <state width="903" height="246" key="GridCell.Tab.3.bottom/0.0.1366.744@0.0.1366.744" timestamp="1601574692263" />
+    <state width="903" height="246" key="GridCell.Tab.3.center" timestamp="1601574692261">
+      <screen x="0" y="0" width="1366" height="744" />
+    </state>
+    <state width="903" height="246" key="GridCell.Tab.3.center/0.0.1366.744@0.0.1366.744" timestamp="1601574692261" />
+    <state width="903" height="246" key="GridCell.Tab.3.left" timestamp="1601574692260">
+      <screen x="0" y="0" width="1366" height="744" />
+    </state>
+    <state width="903" height="246" key="GridCell.Tab.3.left/0.0.1366.744@0.0.1366.744" timestamp="1601574692260" />
+    <state width="903" height="246" key="GridCell.Tab.3.right" timestamp="1601574692262">
+      <screen x="0" y="0" width="1366" height="744" />
+    </state>
+    <state width="903" height="246" key="GridCell.Tab.3.right/0.0.1366.744@0.0.1366.744" timestamp="1601574692262" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/itmo/wp/servlet/StaticServlet.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
